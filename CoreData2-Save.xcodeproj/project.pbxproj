@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A66D6F2B57D1930010BD5C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A66D6E2B57D1930010BD5C /* TableViewCell.swift */; };
+		27A66D712B57D1BA0010BD5C /* DisplayDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A66D702B57D1BA0010BD5C /* DisplayDataViewController.swift */; };
 		27A7D7B82B56A7D50086D14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D7B72B56A7D50086D14A /* AppDelegate.swift */; };
 		27A7D7BA2B56A7D50086D14A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D7B92B56A7D50086D14A /* SceneDelegate.swift */; };
 		27A7D7BC2B56A7D50086D14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D7BB2B56A7D50086D14A /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27A66D6E2B57D1930010BD5C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		27A66D702B57D1BA0010BD5C /* DisplayDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDataViewController.swift; sourceTree = "<group>"; };
 		27A7D7B42B56A7D50086D14A /* CoreData2-Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData2-Save.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A7D7B72B56A7D50086D14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27A7D7B92B56A7D50086D14A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				27A7D7BB2B56A7D50086D14A /* ViewController.swift */,
 				27A7D7D22B56AA0A0086D14A /* DatabaseHandler.swift */,
 				27A7D7BD2B56A7D50086D14A /* Main.storyboard */,
+				27A66D6E2B57D1930010BD5C /* TableViewCell.swift */,
+				27A66D702B57D1BA0010BD5C /* DisplayDataViewController.swift */,
 				27A7D7C32B56A7DA0086D14A /* Assets.xcassets */,
 				27A7D7C52B56A7DA0086D14A /* LaunchScreen.storyboard */,
 				27A7D7C82B56A7DA0086D14A /* Info.plist */,
@@ -163,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A7D7BC2B56A7D50086D14A /* ViewController.swift in Sources */,
+				27A66D6F2B57D1930010BD5C /* TableViewCell.swift in Sources */,
 				27A7D7D32B56AA0A0086D14A /* DatabaseHandler.swift in Sources */,
+				27A66D712B57D1BA0010BD5C /* DisplayDataViewController.swift in Sources */,
 				27A7D7D12B56A93D0086D14A /* Employee+CoreDataProperties.swift in Sources */,
 				27A7D7B82B56A7D50086D14A /* AppDelegate.swift in Sources */,
 				27A7D7C22B56A7D50086D14A /* CoreData2_Save.xcdatamodeld in Sources */,

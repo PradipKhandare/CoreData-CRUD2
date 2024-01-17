@@ -21,5 +21,9 @@ class ViewController: UIViewController {
         DatabaseHandler.dbh.saveData(obj: dict)
     }
     
+    @IBAction func showButtonPressed(_ sender: UIButton) {
+        let dataVC = storyboard?.instantiateViewController(identifier: "DisplayDataViewController") as? DisplayDataViewController
+        self.navigationController?.pushViewController(dataVC!, animated: true)
+    }
 }
 
