@@ -7,11 +7,15 @@
 
 import UIKit
 
+protocol DataPass {
+    func data(object: [String: String], index: Int, isEdit: Bool)
+}
+
 class DisplayDataViewController: UIViewController {
     
-
     @IBOutlet weak var tableView: UITableView!
     var employeeData = [Employee]()
+    var delegate : DataPass!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +43,18 @@ extension DisplayDataViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             employeeData = DatabaseHandler.dbh.deleteData(index: indexPath.row)!
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dict = ["name": employeeData[indexPath.row].name]
+        delegate.data(object: dict as! [String: String], index: indexPath.row, isEdit: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     

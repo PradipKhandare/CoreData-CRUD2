@@ -55,4 +55,15 @@ class DatabaseHandler
             return nil
         }
     }
+    
+    func updateData(object: [String: String], i: Int){
+        var emp = getData()
+        emp![i].name = object["name"]
+        
+        do{
+            try context?.save()
+        }catch {
+            print("Data has not saved successfully.")
+        }
+    }
 }
